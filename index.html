@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta chraset = "UTF-8" />
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0" />
+        <meta name = "description" content = "this is a test" />
+        <link rel = "stylesheet" href = "https://unpkg.com/ress/dist/ress.min.css" />
+        <link rel = "stylesheet" href = "style.css" />
+        <link
+            href = "https://fonts.googleapis.com/css?family=Sawarabi+Gothic"
+            rel = "stylesheet"
+        />
+        <title>LPsite</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id = "header">
+            <h1 class = "site-title">
+                <a href = "#"> LPsite1 </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href = "#about">About</a></li>
+                    <li><a href = "#works">Works</a></li>
+                    <li><a href = "#news">News</a></li>
+                    <li><a href = "#contact">Contact</a></li>
+                    <li>
+                        <a 
+                            href = "https://www.Twitter.com"
+                            target = "_blank"
+                            rel = "noopener noreferrer"
+                            ><img src = "./img/twitter.png" alt = "Twitter" class = "icon"
+                        /></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main-->
+        <div id = "main">
+            <pictuer>
+                <source media = "(max-width: 600px)" srcset = "./img/inswin.png" />
+                <img src = "./img/inswin.png" alt = "" />
+            </pictuer>
+        </div>
+
+        <!-- about -->
+        <section id = "about" class = "wrapper">
+            <h2 class = "sec-title">About</h2>
+            <ul>
+                <li>INSOMNIA</li>
+                <li>insomniaはVALORANTチームです</li>
+                <li>11/6にSBC大会があります</li>
+                <li>INScomというファンコミュニティサーバーがあります</li>
+            </ul>
+            <p>
+                皆でINSOMNIAを応援しよう！
+            </p>
+        </section>
+
+        <!-- works -->
+        <section id = "works" class="wrapper">
+            <h2 class = "sec-title">Works</h2>
+            <ul>
+                    <li><a href="./img/greenins.jpg" target="_blank"><img src="./img/greenins.jpg" width="300" alt="" ></a></li>
+                    <li><a href="./works/animation" target="_blank"><img src="./img/blueins.jpg" width="300" alt="" ></a></li>
+                    <li><img src = "./img/redins.jpg" alt = "works3" /></li>
+                    <li><img src = "./img/card.png" alt = "works4" /></li>
+                    <li><img src = "./img/Front.png" alt = "works5" /></li>
+                    <li><img src = "./img/Side.png" alt = "works6" /></li>
+                    <li><img src = "./img/Top.png" alt = "works7" /></li>
+                    <li><img src = "./img/textuer001.png" alt = "works8" /></li>
+                    <li><img src = "./img/INSOMNIA_LOGO.svg" alt = "works9" /></li>
+            </ul>
+        </section>
+
+        <!-- news -->
+        <section id = "news" class="wrapper">
+            <h2 class = "sec-title">News</h2>
+            <dl>
+                <dt>2022/11/6</dt>
+                <dd>ごめん、同窓会には、行けません</dd>
+                <dt>2022/11/6</dt>
+                <dd>今、このサイトを作っています</dd>
+                <dt>2022/11/6</dt>
+                <dd>いつかあなたに見てもらいたいから</dd>
+                <dt>2022/11/6</dt>
+                <dd>やっぱり、トンネル掘ります</dd>
+            </dl>
+        </section>
+
+        <!-- contact -->
+        <section id = "contact" class="wrapper">
+            <h2 class = "sec-title">Contact</h2>
+            <p>お問い合わせフォームはこちら</p>
+            <form action = "#" method = "post">
+                <dl>
+                    <dt><label for = "name">お名前</label></dt>
+                    <dd><input type = "text" id = "name" /></dd>
+                    <dt><label for = "email">メールアドレス</label></dt>
+                    <dd><input type = "email" id = "email" /></dd>
+                    <dt><label for = "content">内容</label></dt>
+                    <dd><textarea id = "content" cols = "30" rows = "10"></textarea></dd>
+                </dl>
+                <div class = "button"><input type = "submit" value = "送信" /></div>
+            </form>
+        </section>
+    </body>
+</html>
